@@ -1,0 +1,46 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 **Kracken Web Vulnerability Testing Tool**\
+\
+**Introduction:**\
+Kracken is a beta web vulnerability testing tool designed to aid security professionals in identifying potential vulnerabilities in web applications. Developed by Onlx, Kracken provides a comprehensive suite of tests for various types of vulnerabilities, including SQL injection, cross-site scripting (XSS), command injection, and more. It is essential to note that while Kracken can assist in identifying vulnerabilities, Onlx is not responsible for any misuse of this tool.\
+\
+**How Kracken Works:**\
+Kracken operates by sending crafted requests to the target web application and analyzing the responses for indications of vulnerabilities. It utilizes the requests library to interact with the web application and BeautifulSoup for parsing HTML content. The tool employs various techniques specific to each vulnerability type to assess the security posture of the target application.\
+\
+**Usage:**\
+Kracken is a command-line tool that accepts multiple arguments to specify the type of vulnerability tests to perform and the target URL. Here's how to use Kracken:\
+\
+```\
+python kracken.py <url> [--options]\
+```\
+\
+**Options:**\
+- `--sqli <query>`: Test for SQL injection vulnerability with the specified query.\
+- `--file-inclusion <file_path>`: Test for file inclusion vulnerability with the specified file path.\
+- `--xss`: Test for Cross-Site Scripting (XSS) vulnerability.\
+- `--command-injection <command>`: Test for Command Injection vulnerability with the specified command.\
+- `--cors`: Test for Cross-Origin Resource Sharing (CORS) misconfiguration vulnerability.\
+- `--insecure-cookies`: Test for insecure cookies vulnerability.\
+- `--weak-cipher`: Test for weak SSL/TLS cipher suites vulnerability.\
+- `--ssrf`: Test for Server-Side Request Forgery (SSRF) vulnerability.\
+- `--xxe`: Test for XML External Entity (XXE) injection vulnerability.\
+- `--dir-traversal <file_path>`: Test for Directory Traversal vulnerability with the specified file path.\
+- `--idor`: Test for Insecure Direct Object Reference (IDOR) vulnerability.\
+- `--lfi`: Test for Local File Inclusion (LFI) vulnerability.\
+- `--rce`: Test for Remote Code Execution (RCE) vulnerability.\
+\
+**Notes:**\
+- Kracken is currently in beta, and users may encounter issues or unexpected behavior. Please report any bugs or suggestions for improvement.\
+- To troubleshoot errors or unexpected behavior, ensure that the target URL is accessible and correctly specified. Additionally, review the error messages provided by Kracken to identify the root cause of the issue.\
+\
+**Disclaimer:**\
+Kracken is intended for ethical hacking and security testing purposes only. Unauthorized or malicious use of this tool is strictly prohibited. Onlx disclaims any responsibility for any misuse of Kracken.\
+\
+**Conclusion:**\
+Kracken is a powerful tool for identifying vulnerabilities in web applications, offering a range of tests to assess their security posture. By leveraging Kracken, security professionals can proactively identify and remediate potential vulnerabilities, thereby enhancing the overall security of web applications.}
